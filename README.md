@@ -60,9 +60,9 @@ Planned installers: Windows `.exe`, macOS `.dmg`, Linux AppImage and Docker-base
 
 Atulya GST will not bypass GST portal authentication, OTP, CAPTCHA or authorization requirements. It will support official formats and authorized integration paths only. Users remain responsible for review and filing.
 
-## 🔗 Ecosystem
+## 🔗 Independent Atulya Projects
 
-[Atulya ERP](https://github.com/atulyaai/Atulya-Accounting-ERP) · [Atulya Invoice](https://github.com/atulyaai/Atulya-Invoice) · [Atulya DataClean](https://github.com/atulyaai/Atulya-Data-Scruber) · [Atulya One](https://github.com/atulyaai/Atulya-Automation-Hub)
+This is a standalone product. Discover other independent Atulya repositories: [Automation Hub](https://github.com/atulyaai/Atulya-Automation-Hub) · [ERP](https://github.com/atulyaai/Atulya-Accounting-ERP) · [SAP](https://github.com/atulyaai/Atulya-SAP-Automations) · [Office](https://github.com/atulyaai/Atulya-Office) · [HR](https://github.com/atulyaai/Atulya-HR-Suite) · [DataClean](https://github.com/atulyaai/Atulya-Data-Scruber) · [Invoice](https://github.com/atulyaai/Atulya-Invoice) · [Convert](https://github.com/atulyaai/Atulya-All-File-Converter) · [Host](https://github.com/atulyaai/Atulya-Launch)
 
 ## 📜 License
 
