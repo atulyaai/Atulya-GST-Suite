@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "atulya-gst-suite"
+dynamic = ["version"]
+description = "Cross-platform CLI tool for GST preparation, reconciliation, e-invoice and e-way bill workflows"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[project.urls]
+Homepage = "https://github.com/atulya/atulya-gst-suite"
+
+[project.scripts]
+atulya-gst = "atulya_gst_suite.cli:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "atulya_gst_suite.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
