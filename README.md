@@ -1,14 +1,14 @@
-# Atulya GST
+# Atulya-GST-Suite
 
 > **Prepare, check and reconcile GST working data with confidence.** 🧾🇮🇳
 
-![Atulya - One-click business automation](assets/atulya-hero.png)
+![Atulya-GST-Suite banner](assets/atulya-hero.png)
 
 ![Status](https://img.shields.io/badge/status-roadmap-f59e0b)
 ![Approach](https://img.shields.io/badge/approach-validation%20first-10b981)
 ![Compliance](https://img.shields.io/badge/submission-authorized%20flows%20only-2563eb)
 
-Atulya GST is a planned free workspace for GST data preparation, reconciliation and permitted upload/download workflows. It aims to remove spreadsheet confusion while keeping final submission controlled by the taxpayer or authorized professional.
+Atulya-GST-Suite is a planned free workspace for GST data preparation, reconciliation and permitted upload/download workflows. It aims to remove spreadsheet confusion while keeping final submission controlled by the taxpayer or authorized professional.
 
 > 🚧 This is a product plan, not a filing product today. No automatic filing or API access is currently provided.
 
@@ -58,11 +58,7 @@ Planned installers: Windows `.exe`, macOS `.dmg`, Linux AppImage and Docker-base
 
 ## ⚠️ Compliance Boundary
 
-Atulya GST will not bypass GST portal authentication, OTP, CAPTCHA or authorization requirements. It will support official formats and authorized integration paths only. Users remain responsible for review and filing.
-
-## 🔗 Independent Atulya Projects
-
-This is a standalone product. Discover other independent Atulya repositories: [Automation Hub](https://github.com/atulyaai/Atulya-Automation-Hub) · [ERP](https://github.com/atulyaai/Atulya-Accounting-ERP) · [SAP](https://github.com/atulyaai/Atulya-SAP-Automations) · [Office](https://github.com/atulyaai/Atulya-Office) · [HR](https://github.com/atulyaai/Atulya-HR-Suite) · [DataClean](https://github.com/atulyaai/Atulya-Data-Scruber) · [Invoice](https://github.com/atulyaai/Atulya-Invoice) · [Convert](https://github.com/atulyaai/Atulya-All-File-Converter) · [Host](https://github.com/atulyaai/Atulya-Launch)
+Atulya-GST-Suite will not bypass GST portal authentication, OTP, CAPTCHA or authorization requirements. It will support official formats and authorized integration paths only. Users remain responsible for review and filing.
 
 ## 📜 License
 
