@@ -62,7 +62,7 @@ Atulya GST will not bypass GST portal authentication, OTP, CAPTCHA or authorizat
 
 ## 🔗 Ecosystem
 
-[Atulya ERP](https://github.com/atulyaai/Atulya-ERP) · [Atulya Invoice](https://github.com/atulyaai/Atulya-Invoice) · [Atulya DataClean](https://github.com/atulyaai/Atulya-DataClean) · [Atulya One](https://github.com/atulyaai/Atulya-One)
+[Atulya ERP](https://github.com/atulyaai/Atulya-Accounting-ERP) · [Atulya Invoice](https://github.com/atulyaai/Atulya-Invoice) · [Atulya DataClean](https://github.com/atulyaai/Atulya-Data-Scruber) · [Atulya One](https://github.com/atulyaai/Atulya-Automation-Hub)
 
 ## 📜 License
 
