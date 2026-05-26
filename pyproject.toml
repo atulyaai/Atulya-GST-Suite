@@ -27,4 +27,5 @@ atulya-gst = "atulya_gst_suite.cli:main"
 version = {attr = "atulya_gst_suite.__version__"}
 
 [tool.setuptools.packages.find]
-where = ["src"]
+include = ["*"]
+
