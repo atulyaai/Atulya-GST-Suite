@@ -1,7 +1,6 @@
 import json
-import math
-from datetime import datetime, date, timedelta
-from typing import List, Dict, Optional, Tuple
+from datetime import datetime, date
+from typing import List, Optional
 from io import BytesIO
 
 from atulya_gst_suite.utils import validate_gstin, split_tax, format_inr
@@ -11,7 +10,6 @@ def reconcile_gstr2a(purchase_register: List[dict], gstr2a_data: List[dict]) -> 
     matched = []
     unmatched_purchase = []
     unmatched_gstr2a = []
-    partial_matches = []
     purchase_by_key = {}
     for inv in purchase_register:
         key = (
@@ -568,8 +566,8 @@ def get_upcoming_due_dates(months_ahead: int = 3) -> List[dict]:
         due_info = DUE_DATES.get(m, {"gstr1": 11, "gstr3b": 20})
         gstr1_due = date(y, m, due_info["gstr1"])
         gstr3b_due = date(y, m, due_info["gstr3b"])
-        gstr1_status = "OVERDUE" if gstr1_due < today else "UPCOMING" if gstr1_due >= today else "PASSED"
-        gstr3b_status = "OVERDUE" if gstr3b_due < today else "UPCOMING" if gstr3b_due >= today else "PASSED"
+        gstr1_status = "OVERDUE" if gstr1_due < today else "PASSED" if gstr1_due == today else "UPCOMING"
+        gstr3b_status = "OVERDUE" if gstr3b_due < today else "PASSED" if gstr3b_due == today else "UPCOMING"
         results.append({
             "period": period,
             "month": month_name,
@@ -598,9 +596,9 @@ def pretty_due_dates(due_dates: List[dict]) -> str:
         gstr1_dt = date.fromisoformat(dd['gstr1_due'])
         gstr3b_dt = date.fromisoformat(dd['gstr3b_due'])
         if gstr1_dt >= today:
-            lines.append(f"  GSTR-1: {format_inr(float((gstr1_dt - today).days))} days away")
+            lines.append(f"  GSTR-1: {(gstr1_dt - today).days} days away")
         if gstr3b_dt >= today:
-            lines.append(f"  GSTR-3B: {format_inr(float((gstr3b_dt - today).days))} days away")
+            lines.append(f"  GSTR-3B: {(gstr3b_dt - today).days} days away")
     lines.append("")
     lines.append("=" * 60)
     return "\n".join(lines)

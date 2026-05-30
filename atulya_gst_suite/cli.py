@@ -1,10 +1,8 @@
 import json
 import sys
-from typing import Optional
 
 import click
 from rich.console import Console
-from rich.table import Table
 from rich.panel import Panel
 
 from atulya_gst_suite import __version__
@@ -26,8 +24,6 @@ from atulya_gst_suite.core import (
 from atulya_gst_suite.utils import (
     validate_gstin,
     format_inr,
-    lookup_hsn,
-    lookup_sac,
     split_tax,
     format_gstin,
 )
